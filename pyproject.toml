@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fuzzforge"
+version = "0.1.0"
+description = "Coverage-guided fuzzer for Python targets (edge coverage, power scheduling, crash dedup, minimization)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+fuzzforge = "fuzzforge.cli:main"
+
+[tool.setuptools]
+packages = ["fuzzforge"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

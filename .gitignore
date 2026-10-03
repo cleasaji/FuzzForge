@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+fuzz-out/
+*.egg-info/
+build/
+dist/
+tests/_gen_target.py
+.venv/
+.github/
